@@ -32,10 +32,10 @@ function displayTemperature(response) {
 
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
-  descriptionElement = response.data.weather[0].description;
-  humidityElement = response.data.main.humidity;
-  windElement = Math.round(response.data.wind.speed);
-  dateElement = formatDate(response.dt * 1000);
+  descriptionElement.innerHTML = response.data.weather[0].description;
+  humidityElement.innerHTML = response.data.main.humidity;
+  windElement.innerHTML = Math.round(response.data.wind.speed);
+  dateElement.innerHTML = formatDate(response.dt * 1000);
   iconElement.setAttribute(
     "src",
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
