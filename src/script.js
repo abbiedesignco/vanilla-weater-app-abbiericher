@@ -88,5 +88,5 @@ function handleSubmit(event) {
 search("New York");
 displayForecast();
 
-let form = document.querySelector("search-form");
+let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
